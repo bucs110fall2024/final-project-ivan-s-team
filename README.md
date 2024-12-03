@@ -33,12 +33,16 @@ A simple recreation of flappy bird
 1. Moveable Character
 2. Key Click Action
 3. Point System
-4. Start menu
-5. High Score
+4. High Score
+5. Moving Background
 
 ### Classes
 
-- << You should have a list of each of your classes with a description >>
+1. bird (creates the bird object and all its functions)
+2. background (creates the background and constantly moves it)
+3. pipe (creates the pipe object)
+4. score (creates the score and highscore objects)
+5. controller (the main game loop)
 
 ## ATP
 
