@@ -1,4 +1,5 @@
 import pygame
+
 class Background:
     def __init__(self, speed, screen_width, img_file ="assets/background.jpg"):
         """

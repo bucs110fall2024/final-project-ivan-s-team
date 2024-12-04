@@ -1,7 +1,4 @@
-
-:warning: Everything between << >> needs to be replaced (remove << >> after replacing)
-
-Flappy Bird
+Flappy Bird Inspo
 ## CS110 Final Project  Fall 2024
 
 ## Team Members
@@ -33,7 +30,7 @@ A simple recreation of flappy bird
 1. Moveable Character
 2. Key Click Action
 3. Point System
-4. High Score
+4. Object Collision
 5. Moving Background
 
 ### Classes
@@ -41,7 +38,7 @@ A simple recreation of flappy bird
 1. bird (creates the bird object and all its functions)
 2. background (creates the background and constantly moves it)
 3. pipe (creates the pipe object)
-4. score (creates the score and highscore objects)
+4. score (creates the score object)
 5. controller (the main game loop)
 
 ## ATP
