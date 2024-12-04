@@ -45,6 +45,8 @@ A simple recreation of flappy bird
 
 | Step                 |Procedure             |Expected Results                   |
 |----------------------|:--------------------:|----------------------------------:|
-|  1                   | Run Counter Program  |GUI window appears with count = 0  |
-|  2                   | click count button   | display changes to count = 1      |
-etc...
+| 1. Run the Game | Run the main.py file | The pygame window should open and show the starting screen |
+| 2. Start Game | Press space on the starting screen | The gravity should be enabled and pipes should start appearing |
+| 3. Player Movement | Press once or spam the spacebar | The bird should go upwards by how much you pressed space |
+| 4. Collision | Make the bird touch a pipe | The bird should be frozen and it should say Game Over, space to restart |
+| 5. Points | Make the bird go through the pipes without touching | One point should be added to the score(top left) |

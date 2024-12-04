@@ -2,6 +2,13 @@ import pygame
 
 class Bird:
     def __init__(self, x, y, img_file="assets/bird.png"):
+        """
+        Initializes bird object
+        - x : x-cordinate of bird
+        - y : y-cordinate of bird
+        - img_file : imports the bird png
+        """
+
         self.x = x
         self.y = y
         self.startingy = y
@@ -12,7 +19,7 @@ class Bird:
         self.image = pygame.image.load(img_file)
         self.image = pygame.transform.scale(self.image, (35, 35))  # Resize the image
         self.flap_triggered = False
-        self.active = False  # Determines if the bird is affected by gravity
+        self.active = False
 
     def flap(self):
         self.velocity = self.flap_power

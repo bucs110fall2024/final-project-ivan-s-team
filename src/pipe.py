@@ -3,13 +3,18 @@ import random
 
 class Pipe:
     def __init__(self, x, screen_height, img_file="assets/pipe.png", gap_height=150, pipe_width=60):
+        """
+        Initializes the pipe object
+        - gap_height : the gap size between the top and bottom pipes
+        - pipe_width : the width of the pipe png
+        """
+
         self.x = x
         self.screen_height = screen_height
         self.pipe_width = pipe_width
         self.gap_height = gap_height
         self.passed = False
 
-        # Load the pipe image
         self.image = pygame.image.load(img_file)
 
         # Calculate top and bottom pipe heights based on gap and screen height
@@ -20,7 +25,6 @@ class Pipe:
         self.top_image = pygame.transform.scale(self.image, (self.pipe_width, self.top_height))
         self.bottom_image = pygame.transform.scale(self.image, (self.pipe_width, self.bottom_height))
 
-        # Set up the top and bottom pipe positions using the image
         self.top_pipe = pygame.Rect(self.x, 0, self.pipe_width, self.top_height)
         self.bottom_pipe = pygame.Rect(self.x, self.top_height + self.gap_height, self.pipe_width, self.bottom_height)
 
@@ -32,8 +36,7 @@ class Pipe:
     def draw(self, screen):
         flipped_image = pygame.transform.flip(self.top_image, False, True)
         screen.blit(flipped_image, self.top_pipe.topleft)  # Draw flipped top pipe at the top
-        screen.blit(self.bottom_image, self.bottom_pipe.topleft)  # Draw normal bottom pipe
+        screen.blit(self.bottom_image, self.bottom_pipe.topleft)
 
     def get_rects(self):
-        # Returns the full Rect objects for both pipes
         return self.top_pipe, self.bottom_pipe
