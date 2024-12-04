@@ -1,5 +1,8 @@
-Flappy Bird Inspo
 ## CS110 Final Project  Fall 2024
+
+Flappy Bird Inspo
+
+***
 
 ## Team Members
 
